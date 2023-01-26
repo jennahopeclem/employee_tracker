@@ -3,13 +3,20 @@ const menuQuestion = {
   name: "menu",
   message: "What would you like to do next?",
   choices: [
-    "View all deparments",
+    "View all departments",
     "View all employees",
     "View all roles",
-    "Add a deparment",
+    "Add a department",
     "Add a role",
     "Add an employee",
     "Update an employee role",
+    "Update an employee manager",
+    "View all employees by manager",
+    "View all employees by department",
+    "Delete a department",
+    "Delete a role",
+    "Delete an employee",
+    "View total utilized budget of a department",
   ],
 };
 
@@ -23,17 +30,17 @@ const roleQuestions = [
   {
     type: "input",
     message: "Enter name of the role",
-    name: "roleName",
+    name: "title",
   },
   {
     type: "input",
     message: "Enter the salary of this role",
-    name: "roleSal",
+    name: "salary",
   },
   {
     type: "input",
-    message: "Enter the department of this role",
-    name: "roleDept",
+    message: "Enter the id of the department for this role",
+    name: "department_id",
   },
 ];
 
@@ -41,22 +48,22 @@ const employeeQuestions = [
   {
     type: "input",
     message: "Enter the employee's first name",
-    name: "empFname",
+    name: "first_name",
   },
   {
     type: "input",
     message: "Enter the employee's last name",
-    name: "empLname",
+    name: "last_name",
   },
   {
     type: "input",
     message: "Enter the employee's role",
-    name: "empRole",
+    name: "role_id",
   },
   {
     type: "input",
-    message: "Enter the employee's manager",
-    name: "empMang",
+    message: "Enter the employee's manager ID",
+    name: "manager_id",
   },
 ];
 
@@ -64,12 +71,73 @@ const updateEmployeeQuestions = [
   {
     type: "input",
     message: "Enter employee ID",
-    name: "empId",
+    name: "id",
   },
   {
     type: "input",
     message: "Enter the updated role",
-    name: "upRole",
+    name: "role_id",
+  },
+];
+
+const updateEmployeeManagerQuestions = [
+  {
+    type: "input",
+    message: "Enter employee ID",
+    name: "employee_id",
+  },
+  {
+    type: "input",
+    message: "Enter the updated manager ID",
+    name: "manager_id",
+  },
+];
+
+const employeeByManagerQuestions = [
+  {
+    type: "input",
+    message: "Enter manager ID",
+    name: "manager_id",
+  },
+];
+
+const employeeByDepartmentQuestions = [
+  {
+    type: "input",
+    message: "Enter department ID",
+    name: "department_ID",
+  },
+];
+
+const deleteEmployeeQuestions = [
+  {
+    type: "input",
+    message: "Enter employee ID",
+    name: "employee_id",
+  },
+];
+
+const deleteRoleQuestions = [
+  {
+    type: "input",
+    message: "Enter role ID",
+    name: "role_id",
+  },
+];
+
+const deleteDepartmentQuestions = [
+  {
+    type: "input",
+    message: "Enter department ID",
+    name: "department_id",
+  },
+];
+
+const viewBudgetQuestions = [
+  {
+    type: "input",
+    message: "Enter department ID",
+    name: "department_id",
   },
 ];
 
@@ -79,4 +147,12 @@ module.exports = {
   roleQuestions,
   employeeQuestions,
   updateEmployeeQuestions,
+  updateEmployeeManagerQuestions,
+  employeeByManagerQuestions,
+  employeeByDepartmentQuestions,
+  deleteEmployeeQuestions,
+  deleteRoleQuestions,
+  deleteDepartmentQuestions,
+  deleteEmployeeQuestions,
+  viewBudgetQuestions,
 };
