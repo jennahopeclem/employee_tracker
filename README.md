@@ -14,3 +14,6 @@ SO THAT I can organize and plan my business
 
 Though this walk through throws some errors, I am proud of all the code I put into this and plan to revisit the code and polish it up to get it working to the best of my ability. Here's the best I can get it currently: 
 
+
+
+https://user-images.githubusercontent.com/117767518/214733560-73afc8db-2b09-49c4-94d7-3f45d06b7292.mp4
